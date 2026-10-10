@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Limelight&family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&family=Titan+One&display=swap');
+
+:root {
+  color-scheme: dark;
+  --bg: #0A0A0B;
+  --surface: #141416;
+  --border: #26262A;
+  --muted: #8A8A93;
+  --text: #F4F4F5;
+  --olive: #A2A77B;
+  --hero-glow: #26301D;
+  --gradient-end: #8A8A93;
+  --button-bg: #F4F4F5;
+  --button-hover: #D4D4D8;
+  --button-text: #0A0A0B;
+  --art-bg: #34402D;
+  --art-star: #DCE5C4;
+  --art-caption: #D0D9BB;
+  --orbit: #454B3A;
+  --orbit-soft: #2E3329;
+  --visual-ink: #F4F4F5;
+  --tag-number-text: #F4F4F5;
+  --amber: #FBBF24;
+  --error: #FB7185;
+  --success: #4ADE80;
+  --backdrop: color-mix(in srgb, #000000 78%, transparent);
+  --category-technical: #14532D;
+  --category-music: #3B1D6E;
+  --category-cultural: #6B1D2A;
+  --category-gaming: #0F4C5C;
+  --category-sports: #7A4A0B;
+  --tag-technical: #22C55E;
+  --tag-music: #C4B5FD;
+  --tag-cultural: #FDA4AF;
+  --tag-gaming: #67E8F9;
+  --tag-sports: #FCD34D;
+  --font-heading-alt: "Trade Gothic", "Oswald", sans-serif;
+
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  color: var(--text);
+  background: var(--bg);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #F8F8F4;
+  --surface: #FFFEF9;
+  --border: #EAEAE2;
+  --muted: #72736A;
+  --text: #25251F;
+  --olive: #858A60;
+  --hero-glow: #E9EADC;
+  --gradient-end: #77786D;
+  --button-bg: #34372A;
+  --button-hover: #555B3D;
+  --button-text: #FFFFFF;
+  --art-bg: #D9DDC5;
+  --art-star: #555D39;
+  --art-caption: #64694A;
+  --orbit: #BFC4A7;
+  --orbit-soft: #D1D3C0;
+  --visual-ink: #FFFFFF;
+  --tag-number-text: #FFFFFF;
+  --amber: #A85C0A;
+  --error: #B4233D;
+  --success: #18743A;
+  --backdrop: color-mix(in srgb, #171713 58%, transparent);
+  --tag-technical: #166534;
+  --tag-music: #6D28D9;
+  --tag-cultural: #BE123C;
+  --tag-gaming: #0E7490;
+  --tag-sports: #A16207;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 3px;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+::selection {
+  color: var(--button-text);
+  background: var(--olive);
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 15px;
+  }
+}
